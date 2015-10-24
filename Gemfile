@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# eliminate some of the rails server output displayed
+gem 'quiet_assets'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
