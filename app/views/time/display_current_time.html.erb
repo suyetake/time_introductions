@@ -1,1 +1,6 @@
-<h1>The current time is <%= Time.new %> </h1>
+<!-- Although the action can occur here in the view,
+it is best to place it in the controller and use
+the instance variable for the display here. -->
+<!--<h1>The current time is <%= Time.new %> </h1>-->
+
+<h1>The current time is <%= @what_time_is_it %> </h1>
