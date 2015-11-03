@@ -1,0 +1,18 @@
+<!-- Although the action can occur here in the view,
+it is best to place it in the controller and use
+the instance variable for the display here. -->
+<!--<h1>The current time is <%= Time.new %> </h1>-->
+
+<!--While correcting output and refactoring, I moved more-->
+<!--string conversions into the controller:-->
+
+ <!--<% @local_display_time = @what_time_is_it.localtime.rfc2822 %>-->
+ <!--<% @local_offset_time = @local_display_time.to_s.last(5)  %>-->
+ <!--<% @utc_display_time = @what_time_is_it.utc.rfc2822.to_s.chop.chop.chop.chop.chop %>-->
+ <!--<% @utc_display_time = @utc_display_time + ' UTC +00:00' %>-->
+
+<!--<h1>The local time is <%= @local_display_time %> </h1>-->
+<!--<h1>The local offset time is <%= @local_offset_time %> </h1>-->
+<!--<h1>The utc time is <%= @utc_display_time %> </h1>-->
+
+<h1>The current time is <%= @utc_display_time %> </h1>
